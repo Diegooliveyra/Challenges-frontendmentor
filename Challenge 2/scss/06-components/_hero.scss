@@ -1,0 +1,60 @@
+.hero {
+  background-image: url(../../images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: $light-cyan;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $gap-medium;
+  @include container;
+  .logo {
+    max-width: 180px;
+    margin-left: $gap-small;
+    @include device(mobile) {
+      max-width: 140px;
+    }
+  }
+}
+
+.main-hero {
+  @include container;
+  display: flex;
+  justify-content: center;
+  padding: $gap-xlarger $gap-small;
+  @include device(mobile) {
+    padding: $gap-medium $gap-small;
+  }
+}
+
+.info-hero {
+  flex: 1 1 350px;
+  max-width: 600px;
+  p {
+    margin-top: $gap-small;
+    max-width: 500px;
+    font-size: em(16);
+    line-height: em(24, 16);
+    font-family: $font-1;
+    @include device(mobile) {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  @include device(mobile) {
+    text-align: center;
+  }
+}
+
+.img-hero {
+  flex: 1 1 350px;
+  max-width: 600px;
+  margin-left: $gap-smaller;
+  @include device(mobile) {
+    margin-top: $gap-medium;
+  }
+}

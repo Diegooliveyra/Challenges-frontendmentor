@@ -1,0 +1,22 @@
+body {
+    background-image: url(../../images/bg-desktop.svg);
+    background-color: $first-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    @include device (mobile) {
+        background-image: url(../../images/bg-mobile.svg);
+        
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

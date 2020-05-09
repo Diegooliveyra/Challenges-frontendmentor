@@ -1,0 +1,21 @@
+.call-to-action {
+  @include container;
+  display: flex;
+  justify-content: center;
+}
+
+.call-action {
+  width: 100%;
+  max-width: 500px;
+  border: solid 0px $light-cyan;
+  border-radius: 10px;
+  padding: $gap-medium;
+  margin-left: $gap-small;
+  margin-right: $gap-small;
+  background-color: $white;
+  @include shadow;
+  text-align: center;
+  @include device(mobile) {
+    padding: $gap-medium $gap-small;
+  }
+}

@@ -1,0 +1,15 @@
+.social-media ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $gap-medium;
+  li {
+    padding: $gap-smaller/2;
+  }
+  @include device(mobile) {
+    justify-content: center;
+  }
+}
+
+.social-media img {
+  width: 45px;
+}

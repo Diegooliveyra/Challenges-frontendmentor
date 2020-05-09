@@ -1,0 +1,20 @@
+.title {
+  font-family: $font-1;
+  font-size: em(36);
+  line-height: em(48, 36);
+  font-weight: 700;
+  max-width: 400px;
+  margin-top: $gap-medium;
+  @include device(mobile) {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.subtitle {
+  font-family: $font-1;
+  font-size: em(24);
+  line-height: em(32, 24);
+  font-weight: 700;
+  margin-bottom: $gap-small;
+}

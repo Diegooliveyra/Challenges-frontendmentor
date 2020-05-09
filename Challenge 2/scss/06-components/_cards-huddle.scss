@@ -1,0 +1,55 @@
+.cards-huddle {
+  display: flex;
+  @include container;
+  padding: $gap-xlarger 0;
+  @include device(mobile) {
+    padding: $gap-medium 0;
+  }
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: solid 0px $light-cyan;
+  border-radius: 10px;
+  padding: $gap-small;
+  margin: $gap-small;
+  @include shadow;
+  .inverter {
+    order: 2;
+  }
+}
+
+.card-info {
+  flex: 1 1 300px;
+  margin-left: $gap-medium;
+  p {
+    max-width: 420px;
+    font-size: em(16);
+    line-height: em(24, 16);
+    color: $gray-blue;
+  }
+  @include device(mobile) {
+    order: 2;
+    text-align: center;
+    margin-left: 0;
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+.card-image {
+  flex: 1 1 300px;
+  padding: $gap-small;
+  img {
+    max-width: 100%;
+  }
+  @include device(mobile) {
+    max-width: 300px;
+    margin: $gap-small auto;
+  }
+}

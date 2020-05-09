@@ -1,0 +1,46 @@
+.btn-primary {
+  background-color: $white;
+  border-radius: 50px;
+  padding: $gap-smaller $gap-larger;
+  margin-right: $gap-small;
+  @include btn;
+  @include shadow-dark;
+  color: black;
+  @include device(mobile) {
+    padding: $gap-smaller $gap-medium;
+  }
+  transition: 0.2s linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: $pink;
+  border-radius: 50px;
+  padding: $gap-small $gap-larger;
+  margin-top: $gap-medium;
+  @include btn;
+  @include shadow-dark;
+  color: white;
+  transition: 0.2s linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-call-to-action {
+  display: inline-block;
+  background-color: $pink;
+  border-radius: 50px;
+  padding: $gap-small $gap-larger;
+  margin-top: $gap-small;
+  @include btn;
+  @include shadow-dark;
+  color: white;
+  transition: 0.2s linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
