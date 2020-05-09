@@ -1,0 +1,8 @@
+.main-huddle {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $gap-medium 0;
+  @include device(mobile) {
+    padding-bottom: 0px;
+  }
+}

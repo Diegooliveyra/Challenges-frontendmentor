@@ -1,0 +1,8 @@
+.image-huddle {
+    flex: 1 1 300px;
+    padding: 0 $gap-small;
+    img {
+        max-width: 600px;
+        width: 100%;
+    }
+}

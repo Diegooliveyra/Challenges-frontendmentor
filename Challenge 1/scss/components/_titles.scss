@@ -1,0 +1,10 @@
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  color: $second-color;
+  @include device(mobile) {
+    text-align: center;
+  }
+}

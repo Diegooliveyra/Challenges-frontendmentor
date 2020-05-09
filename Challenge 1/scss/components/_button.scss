@@ -1,0 +1,20 @@
+.btn {
+    display: block;
+    padding: $gap-smaller ;
+    margin-top: $gap-small;
+    background-color: $second-color;
+    width: 180px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: $first-color;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .2);
+    @include device (mobile) {
+        margin: $gap-small auto;
+    }
+    transition: 0.2s linear;
+    &:hover {
+        transform: scale(1.05);
+    }
+}

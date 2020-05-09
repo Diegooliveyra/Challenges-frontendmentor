@@ -1,0 +1,14 @@
+.info-huddle {
+  flex: 1 1 300px;
+  margin: $gap-medium $gap-small;
+  p {
+    margin-top: $gap-medium;
+    color: $second-color;
+    font-size: 16px;
+    line-height: 24px;
+    @include device(mobile) {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+  }
+}
