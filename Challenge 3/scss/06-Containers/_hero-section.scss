@@ -1,0 +1,49 @@
+.hero-section {
+  padding-top: $gap-xlarger;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: $gap-small;
+  padding-right: $gap-small;
+  text-align: center;
+  background-image: url(../../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  
+  margin: 0 auto;
+  margin-bottom: $gap-xlarger;
+}
+
+.hero-info {
+  flex: 1 1 300px;
+  p {
+    padding-left: $gap-smaller;
+    padding-right: $gap-smaller;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: $gap-medium;
+  }
+  margin-bottom: $gap-xlarger;
+}
+
+.hero-form {
+  margin-bottom: $gap-xlarger;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: $gap-smaller;
+  padding-right: $gap-smaller;
+  input {
+    max-width: 100%;
+    margin-bottom: $gap-smaller*2;
+    padding:($gap-smaller*2) $gap-small;
+    border: 1px solid $black;
+    color: $LightGray;
+  }
+}

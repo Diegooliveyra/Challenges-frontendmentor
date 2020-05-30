@@ -1,0 +1,21 @@
+.header-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: $gap-medium;
+    padding-left: $gap-small;
+    padding-right: $gap-small;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.menu  {
+    display: flex;
+}
+
+.action {
+    padding: $gap-smaller;
+    color: black;
+}

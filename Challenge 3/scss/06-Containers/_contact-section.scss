@@ -1,0 +1,29 @@
+.contact-section {
+  background-color: $DesaturatedBlue;
+  color: $white;
+  text-align: center;
+  padding: $gap-xlarger $gap-small;
+  p {
+    margin-bottom: $gap-small;
+    color: $black;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: $white;
+  }
+}
+
+.contact-form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: $gap-smaller;
+  padding-right: $gap-smaller;
+  input {
+    max-width: 100%;
+    margin-bottom: $gap-smaller * 2;
+    padding: ($gap-smaller * 2) $gap-small;
+    border: 1px solid $black;
+    color: $LightGray;
+  }
+}

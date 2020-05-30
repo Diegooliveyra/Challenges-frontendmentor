@@ -1,0 +1,8 @@
+.btn-primary {
+  padding: $gap-small $gap-small;
+  background-color: $BrightBlue;
+  color: $white;
+  font-weight: 700;
+  @include shadow-dark;
+  font-size: 0.875em;
+}

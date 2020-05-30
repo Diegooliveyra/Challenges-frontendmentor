@@ -1,0 +1,107 @@
+.service-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: $gap-small;
+  padding-right: $gap-small;
+
+  margin-bottom: $gap-xlarger;
+  background-color: $LightGrayishBlue;
+}
+
+.service-image {
+  flex: 1 1 300px;
+  margin-bottom: $gap-larger * 2;
+}
+
+.service-info {
+  flex: 1 1 300px;
+  > p {
+    margin-bottom: $gap-small;
+    color: $black;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+}
+
+.call-action {
+  text-align: center;
+  display: block;
+  padding: $gap-small;
+  color: $ModerateCyan;
+  position: relative;
+  margin-left: -$gap-smaller;
+  margin-bottom: $gap-larger;
+  font-size: 0.875em;
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: -$gap-smaller;
+    margin-left: $gap-smaller;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 158px;
+    height: 2px;
+    background-color: $ModerateCyan;
+    position: absolute;
+    bottom: $gap-smaller;
+  }
+}
+
+.card {
+  background-color: $white;
+  padding: $gap-small;
+  @include shadow;
+  margin: 0 $gap-medium;
+  max-width: 350px;
+  > p {
+    margin-bottom: $gap-small;
+    color: $black;
+    font-size: 0.75em;
+    line-height: 1.7em;
+    font-weight: 700;
+    color: $black;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../../images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 15px;
+    height: 15px;
+    margin-bottom: $gap-smaller;
+  }
+}
+
+.avatar {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: bolder;
+    padding-left: $gap-medium*2;
+    position: relative;
+    li:nth-last-child(odd) {
+        font-size: 0.7em;
+        font-weight: normal;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(../../images/avatar-testimonial.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+      }
+}
