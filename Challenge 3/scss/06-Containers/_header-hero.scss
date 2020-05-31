@@ -5,6 +5,7 @@
     margin-top: $gap-medium;
     padding-left: $gap-small;
     padding-right: $gap-small;
+    @include container;
 }
 
 .logo {

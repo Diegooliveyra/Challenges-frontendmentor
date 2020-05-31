@@ -3,14 +3,20 @@
   flex-wrap: wrap;
   padding-left: $gap-small;
   padding-right: $gap-small;
-
   margin-bottom: $gap-xlarger;
   background-color: $LightGrayishBlue;
+  @include container;
 }
 
 .service-image {
   flex: 1 1 300px;
   margin-bottom: $gap-larger * 2;
+  @include device (tablet){
+    order: 2;
+  }
+  @include device (desktop){
+    order: 2;
+  }
 }
 
 .service-info {
@@ -21,6 +27,7 @@
     font-size: 1em;
     line-height: 1.4em;
   }
+  
 }
 
 .call-action {

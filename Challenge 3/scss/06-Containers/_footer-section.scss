@@ -39,3 +39,25 @@
       top: 7px;
     }
 }
+.nav-footer {
+  margin-bottom: $gap-medium;
+  a {
+      display: block;
+      color: $LightGrayishBlue;
+      padding-top: $gap-smaller;
+      padding-bottom: $gap-smaller;
+    }
+  
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  a {
+    display: block;
+    padding: $gap-smaller;
+  }
+  img {
+    max-width: 40px;
+  }
+}
